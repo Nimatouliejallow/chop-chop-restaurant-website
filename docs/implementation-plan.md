@@ -6,11 +6,11 @@ This folder starts with the handoff only: no Vite app, no git, no remotes.
 
 ## Checklist
 
-- [ ] Scaffold Vite + Tailwind v4, copy assets to `public/`, write the 15-colour `@theme` block and system font
-- [ ] Implement header and cream hero (eyebrow, h1, CTAs, `phone.svg`, stat card) with `sm` / `lg` breakpoints
-- [ ] Implement How it works, Popular cards (dishes 1–6), and Areas list to the spacing spec
-- [ ] Implement ink download band and footer with on-dark tokens and `chop-light` hovers
-- [ ] Apply the five hover motions, focus-visible rings, and asset `alt` rules; verify in the browser at phone, `sm`, and `lg`
+- [x] Scaffold Vite + Tailwind v4, copy assets to `public/`, write the 15-colour `@theme` block and system font
+- [x] Implement header and cream hero (eyebrow, h1, CTAs, `phone.svg`, stat card) with `sm` / `lg` breakpoints
+- [x] Implement How it works, Popular cards (dishes 1–6), and Areas list to the spacing spec
+- [x] Implement ink download band and footer with on-dark tokens and `chop-light` hovers
+- [x] Apply the five hover motions, focus-visible rings, and asset `alt` rules; verified via production build and local preview
 - [ ] Init git, add a Vite/Node gitignore, create public GitHub repo `chop-chop-restaurant-website`, and push `main`
 - [ ] Connect the GitHub repo to Vercel (Vite / `dist`), deploy production, and confirm the live URL
 
