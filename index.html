@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth scroll-pt-20">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
@@ -7,15 +7,15 @@
     <title>Chop Chop</title>
   </head>
   <body class="bg-surface font-sans text-ink-2">
-    <header>
+    <header class="sticky top-0 z-50 bg-surface">
       <div
-        class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
+        class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
       >
         <a href="#" class="flex items-center gap-2 text-ink">
           <img src="/logo.svg" alt="" class="h-8 w-8" />
           <span class="text-lg font-semibold">Chop Chop</span>
         </a>
-        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+        <div class="hidden items-center gap-4 sm:flex">
           <nav class="flex flex-wrap gap-x-6 gap-y-2" aria-label="Primary">
             <a
               href="#how-it-works"
@@ -39,8 +39,51 @@
             >Get the app</a
           >
         </div>
+        <button
+          type="button"
+          id="menu-toggle"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink transition duration-200 hover:-translate-y-0.5 sm:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-chop"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <span id="menu-icon-open" class="flex flex-col gap-1" aria-hidden="true">
+            <span class="block h-0.5 w-4 bg-ink"></span>
+            <span class="block h-0.5 w-4 bg-ink"></span>
+            <span class="block h-0.5 w-4 bg-ink"></span>
+          </span>
+          <span id="menu-icon-close" class="hidden text-lg leading-none" aria-hidden="true">×</span>
+        </button>
       </div>
     </header>
+
+    <div
+      id="menu-backdrop"
+      class="fixed inset-0 z-40 hidden bg-ink/50 sm:hidden"
+      hidden
+    ></div>
+    <div
+      id="mobile-menu"
+      class="fixed inset-y-0 right-0 z-40 flex hidden w-[min(20rem,85vw)] flex-col bg-surface px-5 py-24 sm:hidden"
+      hidden
+    >
+      <nav class="flex flex-col gap-8" aria-label="Mobile">
+        <a href="#how-it-works" class="text-sm text-ink-3 transition duration-200 hover:text-ink"
+          >How it works</a
+        >
+        <a href="#popular" class="text-sm text-ink-3 transition duration-200 hover:text-ink"
+          >Popular</a
+        >
+        <a href="#areas" class="text-sm text-ink-3 transition duration-200 hover:text-ink"
+          >Areas</a
+        >
+      </nav>
+      <a
+        href="#get-the-app"
+        class="mt-auto mb-6 inline-block rounded-lg bg-chop px-4 py-2 text-center font-semibold text-on-dark transition duration-200 hover:-translate-y-0.5 hover:bg-chop-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-chop"
+        >Get the app</a
+      >
+    </div>
 
     <main>
       <section class="bg-cream py-16 lg:py-24">

@@ -11,8 +11,8 @@ This folder starts with the handoff only: no Vite app, no git, no remotes.
 - [x] Implement How it works, Popular cards (dishes 1–6), and Areas list to the spacing spec
 - [x] Implement ink download band and footer with on-dark tokens and `chop-light` hovers
 - [x] Apply the five hover motions, focus-visible rings, and asset `alt` rules; verified via production build and local preview
-- [ ] Init git, add a Vite/Node gitignore, create public GitHub repo `chop-chop-restaurant-website`, and push `main`
-- [ ] Connect the GitHub repo to Vercel (Vite / `dist`), deploy production, and confirm the live URL
+- [x] Init git, add a Vite/Node gitignore, create public GitHub repo `chop-chop-restaurant-website`, and push `main`
+- [x] Deploy production to Vercel (Vite / `dist`) and confirm the live URL
 
 ## Design concept
 
